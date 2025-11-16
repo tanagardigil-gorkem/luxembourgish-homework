@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 interface KasInfoProps {
   onBack: () => void;
 }
@@ -40,8 +42,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
           <div className="grid md:grid-cols-2 gap-8">
             {/* 1. Kral Mezarları (King's Tombs / Lions Tomb) */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-100">
-              <div className="h-64 bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white text-6xl">
-                🏛️
+              <div className="h-64 bg-gradient-to-br from-amber-400 to-orange-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=800&q=80" 
+                  alt="Ancient Lycian Tomb"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Kral Mezarları</h3>
@@ -59,8 +67,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 2. Kaleköy (Simena) */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-200">
-              <div className="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white text-6xl">
-                🏰
+              <div className="h-64 bg-gradient-to-br from-purple-400 to-pink-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80" 
+                  alt="Kaleköy Castle Village"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Kaleköy (Simena)</h3>
@@ -78,8 +92,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 3. Kekova Sunken City */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-300">
-              <div className="h-64 bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white text-6xl">
-                🌊
+              <div className="h-64 bg-gradient-to-br from-cyan-400 to-blue-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" 
+                  alt="Kekova Sunken City"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Kekova</h3>
@@ -98,8 +118,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 4. Mavi Mağara (Blue Cave) */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-400">
-              <div className="h-64 bg-gradient-to-br from-blue-300 to-indigo-500 flex items-center justify-center text-white text-6xl">
-                💎
+              <div className="h-64 bg-gradient-to-br from-blue-300 to-indigo-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=800&q=80" 
+                  alt="Blue Cave"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Blue Cave</h3>
@@ -118,8 +144,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 5. Kaputaş Beach */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-500">
-              <div className="h-64 bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center text-white text-6xl">
-                🏖️
+              <div className="h-64 bg-gradient-to-br from-yellow-300 to-orange-400 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" 
+                  alt="Kaputaş Beach"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Kaputaş Beach</h3>
@@ -138,8 +170,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 6. Antiphellos Theatre */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-600">
-              <div className="h-64 bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center text-white text-6xl">
-                🎭
+              <div className="h-64 bg-gradient-to-br from-red-400 to-rose-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80" 
+                  alt="Antiphellos Ancient Theatre"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Antiphellos Theatre</h3>
@@ -158,8 +196,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 7. The Lycian Way */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-700">
-              <div className="h-64 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white text-6xl">
-                🥾
+              <div className="h-64 bg-gradient-to-br from-green-400 to-emerald-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80" 
+                  alt="Lycian Way Hiking Trail"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">The Lycian Way</h3>
@@ -178,8 +222,14 @@ export default function KasInfo({ onBack }: KasInfoProps) {
 
             {/* 8. Patara Beach */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-800">
-              <div className="h-64 bg-gradient-to-br from-amber-300 to-yellow-500 flex items-center justify-center text-white text-6xl">
-                🐢
+              <div className="h-64 bg-gradient-to-br from-amber-300 to-yellow-500 relative overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80" 
+                  alt="Patara Beach"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Patara Beach</h3>

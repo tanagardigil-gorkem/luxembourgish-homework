@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface PostcardProps {
   onOpen: () => void;
@@ -24,21 +25,13 @@ export default function Postcard({ onOpen }: PostcardProps) {
         <div className="absolute inset-0 backface-hidden">
           <div className="w-full h-full bg-white shadow-2xl overflow-hidden relative group">
             {/* Main beach image */}
-            <img 
+            <Image 
               src="/kas-2.jpg" 
               alt="Kaş Beach - Aerial View"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                if (target.nextElementSibling) {
-                  (target.nextElementSibling as HTMLElement).style.display = 'flex';
-                }
-              }}
+              fill
+              className="object-cover"
+              priority
             />
-            <div className="hidden w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 items-center justify-center text-white text-sm">
-              Image not found: kas-2.jpg
-            </div>
 
             {/* Elegant overlay gradient for text readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
