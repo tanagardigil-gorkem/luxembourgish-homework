@@ -102,7 +102,7 @@ export default function Postcard({ onOpen }: PostcardProps) {
                         Bis zu Kekova!
                       </p>
                       <p className="font-handwriting text-lg mt-2 text-right" style={{ lineHeight: '1.5' }}>
-                        Kayra &amp;&amp; Görkem
+                        Kayra &amp; Görkem
                       </p>
                     </div>
                     
