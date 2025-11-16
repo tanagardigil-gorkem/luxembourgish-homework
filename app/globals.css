@@ -135,6 +135,6 @@ body {
 
 /* Handwriting font */
 .font-handwriting {
-  font-family: var(--font-caveat), cursive;
-  font-weight: 500;
+  font-family: var(--font-patrick-hand), cursive;
+  font-weight: 400;
 }

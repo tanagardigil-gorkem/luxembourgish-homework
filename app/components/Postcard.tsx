@@ -134,24 +134,25 @@ export default function Postcard({ onOpen }: PostcardProps) {
                   <div className="space-y-4 flex-1">
                     <div className="space-y-3">
                       <div className="border-b border-gray-400 pb-1">
-                        <p className="text-xs text-gray-500 mb-1">TO:</p>
-                        <div className="h-4"></div>
-                        Gilles Kaiser
+                        <p className="text-xs text-gray-500 mb-1 font-sans">TO:</p>
+                        <p className="font-handwriting text-lg">
+                          Gilles Kaiser
+                        </p>
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4">
+                        <p className="font-handwriting text-base">
                           2, Rue Luxembourg Education Center
-                        </div>
+                        </p>
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4">
+                        <p className="font-handwriting text-base">
                           L-1111. Steinfort
-                        </div>
+                        </p>
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4">
+                        <p className="font-handwriting text-base">
                           Luxembourg
-                        </div>
+                        </p>
                       </div>
                     </div>
 

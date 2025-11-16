@@ -44,7 +44,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-100">
               <div className="h-64 bg-gradient-to-br from-amber-400 to-orange-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=800&q=80" 
+                  src="/kral-mezarlari.jpg" 
                   alt="Ancient Lycian Tomb"
                   fill
                   className="object-cover"
@@ -69,7 +69,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-200">
               <div className="h-64 bg-gradient-to-br from-purple-400 to-pink-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80" 
+                  src="/kalekoy.jpg" 
                   alt="Kaleköy Castle Village"
                   fill
                   className="object-cover"
@@ -94,7 +94,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-300">
               <div className="h-64 bg-gradient-to-br from-cyan-400 to-blue-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80" 
+                  src="/kekova.jpg" 
                   alt="Kekova Sunken City"
                   fill
                   className="object-cover"
@@ -120,7 +120,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-400">
               <div className="h-64 bg-gradient-to-br from-blue-300 to-indigo-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=800&q=80" 
+                  src="/blue-cave.jpg" 
                   alt="Blue Cave"
                   fill
                   className="object-cover"
@@ -146,7 +146,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-500">
               <div className="h-64 bg-gradient-to-br from-yellow-300 to-orange-400 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" 
+                  src="/kaputas.jpg" 
                   alt="Kaputaş Beach"
                   fill
                   className="object-cover"
@@ -172,7 +172,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-600">
               <div className="h-64 bg-gradient-to-br from-red-400 to-rose-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80" 
+                  src="/antiphellos-theatre-kas.jpg" 
                   alt="Antiphellos Ancient Theatre"
                   fill
                   className="object-cover"
@@ -194,28 +194,28 @@ export default function KasInfo({ onBack }: KasInfoProps) {
               </div>
             </section>
 
-            {/* 7. The Lycian Way */}
+            {/* 7. Saklıkent Gorge */}
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-700">
               <div className="h-64 bg-gradient-to-br from-green-400 to-emerald-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80" 
-                  alt="Lycian Way Hiking Trail"
+                  src="/saklikent.jpg" 
+                  alt="Saklıkent Gorge Canyon"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">The Lycian Way</h3>
-                <p className="text-sm text-gray-500 mb-1 italic">Likya Yolu</p>
-                <p className="text-sm text-green-600 mb-3 font-semibold">World&apos;s Top 10 Long-Distance Trails</p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Saklıkent Gorge</h3>
+                <p className="text-sm text-gray-500 mb-1 italic">Saklıkent Kanyonu</p>
+                <p className="text-sm text-green-600 mb-3 font-semibold">Turkey&apos;s Longest & Deepest Canyon</p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  The <strong>Lycian Way</strong> is a <strong>540km marked hiking trail</strong> that passes through Kaş, connecting ancient Lycian ruins with stunning coastal and mountain scenery. Rated as one of the <strong>world&apos;s top 10 long-distance trails</strong>, it offers breathtaking views of the Mediterranean, passes through pine forests, and leads to ancient cities, rock tombs, and remote villages. Whether you hike a day section or the full route, it&apos;s an unforgettable journey through history and nature.
+                  <strong>Saklıkent Gorge</strong>, meaning &quot;Hidden City,&quot; is a breathtaking <strong>18km-long canyon</strong> with walls reaching up to <strong>300 meters high</strong>. Located 50km from Kaş, this natural wonder was formed by glacial meltwater cutting through the Akdağlar mountains. Wade through icy mountain streams, walk on wooden platforms suspended over rushing water, and experience the dramatic narrow passages where sunlight barely reaches. The gorge maintains a cool temperature even in summer, making it a refreshing escape.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">540km Trail</span>
-                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">World Top 10</span>
-                  <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Ancient Ruins</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">18km Canyon</span>
+                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">300m High Walls</span>
+                  <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Adventure Sport</span>
                 </div>
               </div>
             </section>
@@ -224,7 +224,7 @@ export default function KasInfo({ onBack }: KasInfoProps) {
             <section className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all animate-slideUp delay-800">
               <div className="h-64 bg-gradient-to-br from-amber-300 to-yellow-500 relative overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80" 
+                  src="/patara.jpg" 
                   alt="Patara Beach"
                   fill
                   className="object-cover"
