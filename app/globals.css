@@ -132,3 +132,9 @@ body {
 .delay-800 {
   animation-delay: 0.8s;
 }
+
+/* Handwriting font */
+.font-handwriting {
+  font-family: var(--font-caveat), cursive;
+  font-weight: 500;
+}

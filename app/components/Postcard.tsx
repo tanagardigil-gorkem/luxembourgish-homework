@@ -53,8 +53,15 @@ export default function Postcard({ onOpen }: PostcardProps) {
               </div>
             </div>
 
+            {/* Photo credit */}
+            <div className="absolute bottom-2 left-2">
+              <p className="text-[10px] text-white/70 drop-shadow-lg">
+                📷 Photo by Kayra Tanagardigil
+              </p>
+            </div>
+
             {/* Bottom - Elegant title overlay */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 pb-8">
               <div className="text-center">
                 <h1 className="text-6xl font-bold text-white mb-2 drop-shadow-2xl font-serif tracking-wide">
                   Kaputaş Plajı
@@ -83,18 +90,27 @@ export default function Postcard({ onOpen }: PostcardProps) {
               <div className="grid grid-cols-2 gap-6 h-full">
                 {/* Left side - Message area */}
                 <div className="border-r-2 border-dashed border-gray-400 pr-6">
-                  <div className="bg-white border border-gray-300 p-4 h-full shadow-sm">
-                    <p className="text-xs text-gray-500 mb-3 uppercase tracking-wide">Message:</p>
-                    <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
-                      <p className="font-handwriting">
-                        Discover the enchanting coastal town of Kaş, where crystal-clear turquoise waters meet ancient Lycian history.
+                  <div className="bg-white border border-gray-300 p-4 h-full shadow-sm flex flex-col">
+                    <p className="text-xs text-gray-500 mb-2 uppercase tracking-wide font-sans">MESSAGE:</p>
+                    <div className="flex-1 overflow-y-auto space-y-1 text-gray-800 leading-relaxed mb-3">
+                      <p className="font-handwriting text-lg" style={{ lineHeight: '1.5' }}>
+                        Léiwen Gilles,
                       </p>
-                      <div className="space-y-1 text-xs">
-                        <p>🏖️ Pristine beaches & hidden coves</p>
-                        <p>🤿 World-class diving spots</p>
-                        <p>🏛️ Ancient Lycian ruins</p>
-                        <p>🌅 Breathtaking sunsets</p>
-                      </div>
+                      <p className="font-handwriting text-base mt-1" style={{ lineHeight: '1.6' }}>
+                        Mir schreiwen am Paradis, aus der Tierkei, vu Kas. D&apos;Wieder ass surrealistesch. Et ass waarm and D&apos;Sonn schéngt.
+                      </p>
+                      <p className="font-handwriting text-base" style={{ lineHeight: '1.6' }}>
+                        Mir ginn eng ganz schéi Plage, vu Kaputaş. Den moien gi mir an traditionell Restaurant iessen.
+                      </p>
+                      <p className="font-handwriting text-base" style={{ lineHeight: '1.6' }}>
+                        Mir waarden dech fir op Kekova goen. Wéini ass däi Fluch?
+                      </p>
+                      <p className="font-handwriting text-base mt-1" style={{ lineHeight: '1.6' }}>
+                        Bis zu Kekova!
+                      </p>
+                      <p className="font-handwriting text-lg mt-2 text-right" style={{ lineHeight: '1.5' }}>
+                        Kayra &amp;&amp; Görkem
+                      </p>
                     </div>
                     
                     <button
@@ -102,7 +118,7 @@ export default function Postcard({ onOpen }: PostcardProps) {
                         e.stopPropagation();
                         onOpen();
                       }}
-                      className="mt-4 w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2 px-4 text-sm font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md"
+                      className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2.5 px-4 text-sm font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-md rounded"
                     >
                       Explore Kaş →
                     </button>
@@ -127,22 +143,29 @@ export default function Postcard({ onOpen }: PostcardProps) {
                       <div className="border-b border-gray-400 pb-1">
                         <p className="text-xs text-gray-500 mb-1">TO:</p>
                         <div className="h-4"></div>
+                        Gilles Kaiser
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4"></div>
+                        <div className="h-4">
+                          2, Rue Luxembourg Education Center
+                        </div>
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4"></div>
+                        <div className="h-4">
+                          L-1111. Steinfort
+                        </div>
                       </div>
                       <div className="border-b border-gray-400 pb-1">
-                        <div className="h-4"></div>
+                        <div className="h-4">
+                          Luxembourg
+                        </div>
                       </div>
                     </div>
 
                     {/* Postmark */}
                     <div className="mt-auto">
                       <div className="inline-block border-2 border-red-400 rounded-full px-3 py-1">
-                        <p className="text-xs text-red-600 font-bold">KAŞ, TURKEY</p>
+                        <p className="text-xs text-red-600 font-bold">KAŞ, TÜRKIYE</p>
                         <p className="text-[10px] text-red-500 text-center">2025</p>
                       </div>
                     </div>
